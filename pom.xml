@@ -53,6 +53,25 @@
       <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
     <dependency>
+  <repositories>
+	  <repository>
+	     <id>nexus</id>
+	     <name>nexus-releases</name>
+	     <url>http://34.214.67.55:8081/repository/maven_t//</url>
+	  </repository>
+  </repositories>
+  <distributionManagement>
+     <repository>
+	     <id>nexus</id>
+	     <name>nexus-releases</name>
+	     <url>http://34.214.67.55:8081/repository/m2hosted/</url>
+     </repository>
+     <snapshotRepository>
+	      <id>nexus</id>
+	      <name>nexus-snapshot</name>
+	     <url>http://34.214.67.55:8081/repository/m2snap/</url>
+     </snapshotRepository>
+  </distributionManagement>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
@@ -398,3 +417,4 @@
   </profiles>
 
 </project>
+
